@@ -1,0 +1,83 @@
+body{
+    height: 100%;
+    background:  rgba(255, 255, 255, 0.979);
+}
+
+.wrap{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;  
+}
+
+#logo{
+    font-family: 'PtSerifBold';
+    color: rgb(211, 16, 16);
+    font-size: 330%;
+}
+
+#logo::before{
+    content: url('icons8-игральная-кость-60.png'); 
+    margin-right: 2%;
+}
+
+.menu > ul{
+    display: flex;
+    justify-content: center;
+    font-family: 'PtSerif';
+    font-size: 100%;
+    font-weight: 100;
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+.menu > ul li a{
+    display: block;
+    background: rgb(43, 40, 42);
+    margin: auto;
+    text-align: center;
+    padding: 10px 230px 10px 230px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.979);
+    transition: 0.5s;
+}
+
+.menu > ul li:first-child{
+    border-left: 3px solid rgb(211, 16, 16);
+}
+
+.menu > ul li:last-child{
+    border-right: 3px solid rgb(211, 16, 16);
+}
+
+.menu li a:hover{
+    background: rgb(211, 16, 16);
+    color:rgba(255, 255, 255, 0.979);
+    box-shadow: 1px 5px 10px -5px black;
+    transition: 0.5s;
+}
+
+/*sub menu*/
+
+.menu li ul{
+    position: absolute;
+    min-width: 150px;
+    border: none;
+    display: none;
+}
+
+.menu li > ul li{
+    border: 2px solid rgb(211, 16, 16);
+}
+
+.menu li > ul li a{
+    padding: 10px 175px 10px 175px;
+    background: rgba(43, 40, 42, 0.829);
+    transition: 0.5s;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
