@@ -16,9 +16,10 @@ body{
 }
 
 #logo::before{
-    content: url('icons8-игральная-кость-60.png'); 
+    content: url('assets/icons8-игральная-кость-60.png'); 
     margin-right: 2%;
 }
+
 
 .menu > ul{
     display: flex;
@@ -38,7 +39,7 @@ li{
     background: rgb(43, 40, 42);
     margin: auto;
     text-align: center;
-    padding: 10px 230px 10px 230px;
+    padding: 10px 245px 10px 245px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.979);
     transition: 0.5s;
@@ -81,3 +82,27 @@ li{
 .menu li:hover > ul{
     display: block;
 }
+
+/*list*/
+/*
+.list{
+    margin-top: 95%;
+    margin-right: 150%;
+}
+
+.list li{
+    position: relative;
+    display: inline;
+}
+*/
+
+.list{
+    clear: both;
+}
+.list img  {
+    display: inline-block;
+    padding: 15px;
+    background: #fff;
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+   }
